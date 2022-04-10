@@ -1,0 +1,383 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .menu {
+  width: 25%;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+}
+
+.main .menu__header {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 35px;
+  letter-spacing: 0.04em;
+  color: #5932EA;
+  margin-top: 60px;
+}
+
+.main .menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.main .menu__nav .nav {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 230px;
+  height: 50px;
+  border: 1px solid rgba(89, 50, 234, 0.42);
+  border-radius: 10px;
+  color: rgba(89, 50, 234, 0.65);
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .menu__nav .nav .nav__img {
+  padding-left: 15px;
+}
+
+.main .menu__nav .nav .nav__text {
+  padding-left: 10px;
+}
+
+.main .menu__nav .nav:hover {
+  background-color: #5932EA;
+  -webkit-box-shadow: 0px 2px 16px #5932EA;
+          box-shadow: 0px 2px 16px #5932EA;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.main .menu .footer {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .menu .footer__elipce {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #7350F2;
+}
+
+.main .menu .footer__elipce .elipce__img {
+  margin-top: 5px;
+}
+
+.main .menu .footer__btn {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 230px;
+  height: 50px;
+  background: #5932EA;
+  -webkit-box-shadow: 0px 4px 4px rgba(89, 50, 234, 0.25);
+          box-shadow: 0px 4px 4px rgba(89, 50, 234, 0.25);
+  border-radius: 24px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .menu .footer__btn .elipce__white {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.main .menu .footer__btn .elipce__white .footer__img {
+  padding-top: 6px;
+  padding-left: 7px;
+}
+
+.main .menu .footer__btn .footer__text {
+  padding-left: 10px;
+}
+
+.main__inner {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__inner .main__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 27px;
+  padding: 50px 250px;
+}
+
+.main__inner .main__profile .profile__elipce {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+.main__inner .main__profile .profile__elipce .user__img {
+  margin-top: 5px;
+}
+
+.main__inner .main__profile .profile__text {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2E2E2E;
+}
+
+.main__inner .main__profile .profile__btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #7350F2;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.main__inner .main-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.main__inner .main-flex .main__test {
+  position: relative;
+  margin-right: 30px;
+  padding: 40px 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 27px;
+}
+
+.main__inner .main-flex .main__test .test__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.main__inner .main-flex .main__test .test__list .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__inner .main-flex .main__test .test__list .test .test-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__inner .main-flex .main__test .test__list .test .test-space .test__img {
+  width: 60px;
+}
+
+.main__inner .main-flex .main__test .test__list .test .test-space .test__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2E2E2E;
+}
+
+.main__inner .main-flex .main__test .test__list .test .test__btn {
+  margin-left: 30px;
+  padding: 10px 15px;
+  border: 1px solid #7350F2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 10px;
+  color: #7350F2;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__inner .main-flex .main__test .test__list .test .test__btn:hover {
+  background-color: #7350F2;
+  color: #FFFFFF;
+}
+
+.main__inner .main-flex .main__test .all__test {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__inner .main-flex .main__test .all__test .all__text {
+  font-size: 12px;
+  color: black;
+}
+
+.main__inner .main-flex .main__test .all__test .all__img {
+  margin-left: 10px;
+}
+
+.main__inner .main-flex .main__logo .logo__it {
+  width: 300px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 27px;
+}

@@ -5,55 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/style/style.css">
-    <title>Variable Quiz</title>
+    <link rel="stylesheet" href="style/main.css">
+    <title>Главная страница</title>
 </head>
 <body>
-    <h1 >Hello</h1>
-    <h2 >Hello</h2>
-    <h3 >Hello</h3>
-    <p></p>
-    <div class="btn__220-50">
-        <a href="#" class="button__text-220-50">Главная страница</a>
-    </div>
-    <p></p>
-    <div class="button__theme">
-        <a href="#" class="theme__text">Light theme</a>
-    </div>
-   
-    <p></p>
-    <div class="btn__160-70">
-        <a href="#" class="button__text-160-70">Далее/Назад</a>
-    </div>
-    <p></p>
-    <div class="btn__130-60">
-        <a href="#" class="button__text-130-60">Редактировать</a>
-    </div>
-    <p></p>
-    <div class="btn__130-30">
-        <a href="#" class="button__text-130-30">Одиночный</a>
-    </div>
-    <p></p>
-    <div class="btn__110-50">
-        <a href="#" class="button__text-110-50">Ответить</a>
-    </div>
-    <p></p>
-    <div class="btn__50-30">
-        <a href="#" class="button__text-50-30">45/60</a>
-    </div>
-    <p></p>
-    <div class="ellipce__big"></div>
-    <p></p>
-    <div class="ellipce__small"></div>
-    <p></p>
+    <section class="main">   
+        <aside class="menu">
+            <header class="menu__header">
+                YourVictory
+            </header>
+            <section class="menu__nav">
+                    <nav class="nav">
+                        <img class="nav__img" src="/img/home.svg" alt=""> 
+                        <div class="nav__text">Главная страница</div>
+                    </nav>
+                    <nav class="nav">
+                        <img class="nav__img" src="/img/mark.png" alt=""> 
+                        <div class="nav__text">Создание викторины</div>
+                    </nav>
+                    <nav class="nav">
+                        <img class="nav__img" src="/img/result.svg" alt=""> 
+                        <div class="nav__text">Мои результаты</div>
+                    </nav>
+                    <nav class="nav">
+                        <img class="nav__img" src="/img/myquiz.svg" alt=""> 
+                        <div class="nav__text">Мои викторины</div>
+                    </nav>
+                    <nav class="nav">
+                        <img class="nav__img" src="/img/cubik.svg" alt=""> 
+                        <div class="nav__text">Результаты 
+                        </div>
+                    </nav>
+            </section>
 
-    <form class="form" action="#adres_server" method="get" enctype="multipart/form-data">
-        <div class="form__title">Название викторины</div>
-       <input class="form__field form__text" type="text" name="question" placeholder="Введите название викторины" autocomplete="on">
-        <div class="form__border"></div>
-    </form>
+            <footer class="footer">
+                <div class="footer__elipce">
+                    <img class="elipce__img" src="img/menu-prof.png" alt="">
+                </div>
+                <div class="footer__btn">
+                    <div class="elipce__white">
+                        <img class="footer__img" src="/img/Moon.png" alt=""> 
+                    </div>
+                    <div class="footer__text">Light theme 
+                    </div>
+                </div>
+            </footer>
+        </aside>
 
-    <p></p>
 
+        <main class="main__inner">
+            <section class="main__profile">
+                <div class="profile__elipce">
+                    <img class="user__img" src="img/User.png" alt="">
+                </div>
+                <div class="profile__text">
+                    Добро пожаловать, Александр
+                </div>
+                <div class="profile__btn">
+                    Перейти в профиль
+                </div>
+            </section>
+
+            <div class="main-flex">
+                <section class="main__test">
+                    <div class="test__title">
+                        Cписок ваших созданных <br>Викторин
+                    </div>
+
+                    
+                    <ul class="test__list">
+                        <li class="test">
+                            <div class="test-space">
+                                <img class="test__img" src="img/test.png" alt="">
+                                <div class="test__text">Викторинана знание JAVA
+                                </div>
+                            </div>
+                            <div class="test__btn">
+                                Открыть викторину
+                            </div>
+                        </li>
+                        <li class="test">
+                            <div class="test-space">
+                                <img class="test__img" src="img/test.png" alt="">
+                                <div class="test__text">Викторина на знание C++
+                                </div>
+                            </div>
+                            <div class="test__btn">
+                                Открыть викторину
+                            </div>
+                        </li>
+                        <li class="test">
+                            <div class="test-space">
+                                <img class="test__img" src="img/test.png" alt="">
+                                <div class="test__text">Викторина на знание Python’a
+                                </div>
+                            </div>
+                            <div class="test__btn">
+                                Открыть викторину
+                            </div>
+                        </li>
+                        <li class="test">
+                            <div class="test-space">
+                                <img class="test__img" src="img/test.png" alt="">
+                                <div class="test__text">Викторина на знание C#
+                                </div>
+                            </div>
+                            <div class="test__btn">
+                                Открыть викторину
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <a class="all__test" href="#">
+                        <div class="all__text">Просмотреть все</div>
+                        <img class="all__img" src="img/strel.png" alt=""> 
+                    </a>
+                </section>
+
+                <section class="main__logo">
+                    <img class="logo__it" src="img/logo-1.png" alt="">
+                </section>
+            </div>
+        </main>
+    </section> 
 </body>
 </html>
